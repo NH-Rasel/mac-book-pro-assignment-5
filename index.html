@@ -32,24 +32,31 @@
                         <!-- Memory option -->
                         <div class="mt-5">
                             <h5 class="fw-bold">Memory</h5>
-                            <button type="button" class="btn btn-outline-dark">8GB unified memory</button>
-                            <button type="button" class="btn btn-outline-dark">16GB unified memory</button>
+                            <button id="8GB-memory" type="button" class="btn btn-outline-dark">8GB unified
+                                memory</button>
+                            <button id="16GB-memory" type="button" class="btn btn-outline-dark">16GB unified
+                                memory</button>
                         </div>
 
                         <!-- storage option -->
                         <div class="mt-5">
                             <h5 class="fw-bold">Storage</h5>
-                            <button type="button" class="btn btn-outline-dark">256GB SSD storage</button>
-                            <button type="button" class="btn btn-outline-dark">512GB SSD storage</button>
-                            <button type="button" class="btn btn-outline-dark">1TB SSD storage</button>
+                            <button id="256GB-storage" type="button" class="btn btn-outline-dark">256GB SSD
+                                storage</button>
+                            <button id="512GB-storage" type=" button" class="btn btn-outline-dark">512GB SSD
+                                storage</button>
+                            <button id="1TB-storage" type=" button" class="btn btn-outline-dark">1TB SSD
+                                storage</button>
                         </div>
 
                         <!-- delivery option -->
                         <div class="mt-5">
                             <h5 class="fw-bold">Choose your delivery option</h5>
-                            <button type="button" class="btn btn-outline-dark">Friday, Aug 25 FREE Prime
+                            <button id="free-delivery" type="button" class="btn btn-outline-dark">Friday, Aug 25 FREE
+                                Prime
                                 Delivery</button>
-                            <button type="button" class="btn btn-outline-dark">Friday, Aug 21 Delivery charge
+                            <button id="paid-delivery" type="button" class="btn btn-outline-dark">Friday, Aug 21
+                                Delivery charge
                                 $20</button>
                         </div>
 
@@ -59,25 +66,25 @@
                                 <tbody>
                                     <tr>
                                         <td>Best Price</td>
-                                        <td>$1299</td>
+                                        <td>$<span id="best-price">1299</span></td>
                                     </tr>
                                     <tr>
                                         <td>Extra Memory Cost</td>
-                                        <td>$0</td>
+                                        <td>$<span id="memory-cost">0</span></td>
                                     </tr>
                                     <tr>
                                         <td>Extra Storage Cost</td>
-                                        <td>$0</td>
+                                        <td>$<span id="storage-cost">0</span></td>
                                     </tr>
                                     <tr>
                                         <td>Delivery Charge</td>
-                                        <td>$0</td>
+                                        <td>$<span id="delivery-cost">0</span></td>
                                     </tr>
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <td>Total Price</td>
-                                        <td>$1299</td>
+                                        <td>$<span id="total-cost">1299</span></td>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -86,10 +93,10 @@
                         <!-- promo code option -->
                         <div class="mt-3">
                             <h5>Add Promo code</h5>
-                            <form class="d-flex w-50">
-                                <input class="form-control me-1" type="code" aria-label="Code">
-                                <button class="btn btn-danger" type="submit">Apply</button>
-                            </form>
+                            <div class="d-flex w-50">
+                                <input id="promo-input" class="form-control me-1" type="code" aria-label="Code">
+                                <button id="promo-code" class="btn btn-danger" type="submit">Apply</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -99,7 +106,7 @@
 
         <!-- subtotal part -->
         <div>
-            <h2 class="text-center">Total: $1299</h2>
+            <h2 class="text-center">Total: $<span id="final-total">1299</span></h2>
         </div>
     </main>
 
